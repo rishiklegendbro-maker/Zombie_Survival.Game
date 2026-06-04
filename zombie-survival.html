@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/user/Documents/Codex/2026-05-12/hi-bro/index.html -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zombie Survival.Game</title>
+  <meta name="description" content="Zombie Survival.Game is a mobile-only zombie survival shooter built to play on phones.">
+  <meta name="keywords" content="Zombie Survival.Game, zombie survival, mobile game, phone shooter, touch controls">
+  <meta property="og:title" content="Zombie Survival.Game">
+  <meta property="og:description" content="Play Zombie Survival.Game on your phone with touch controls and mobile-only gameplay.">
+  <link rel="canonical" href="https://zombiesurvival.game/">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: #11131a;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f7f7f7;
+    }
+
+    canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      background: #171b24;
+      cursor: crosshair;
+    }
+
+    .hud {
+      position: fixed;
+      inset: 14px 14px auto 14px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      pointer-events: none;
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.55);
+    }
+
+    .hud-left,
+    .hud-right {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .hud-right {
+      justify-content: flex-end;
+    }
+
+    .pill {
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(18, 22, 32, 0.76);
+      padding: 8px 11px;
+      border-radius: 7px;
+      font-size: 14px;
+      line-height: 1;
+      backdrop-filter: blur(8px);
+    }
+
+    .bar {
+      width: 180px;
+      height: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.38);
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 100%;
+      width: 100%;
+      background: #4caf50;
+      transition: width 120ms ease;
+    }
+
+    .xp .fill {
+      background: #4aa3ff;
+    }
+
+    .danger .fill {
+      background: #e44b4b;
+    }
+
+    .center-card {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      width: min(660px, calc(100vw - 34px));
+      transform: translate(-50%, -50%);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      background: rgba(17, 20, 30, 0.88);
+      padding: 22px;
+      text-align: center;
+      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .center-card h1 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 5vw, 48px);
+      letter-spacing: 0;
+    }
+
+    .center-card p {
+      margin: 9px 0;
+      color: #d7dbe7;
+      line-height: 1.45;
+    }
+
+    .menu-actions {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .menu-actions button,
+    .back-button,
+    .skin-button,
+    .shop-button,
+    .rating-button,
+    .login-button,
+    #continueButton,
+    #checkpointShopButton,
+    #gameOverHomeButton,
+    #restartButton {
+      margin: 0;
+      border: 0;
+      border-radius: 7px;
+      background: #f2c84b;
+      color: #1c1820;
+      padding: 12px 14px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .menu-actions button.active {
+      background: #f7f7f7;
+      color: #161616;
+      box-shadow: inset 0 0 0 2px rgba(0,0,0,0.12);
+    }
+
+    .back-button {
+      margin-top: 14px;
+      background: #dfe7f1;
+    }
+
+    .intro-grid,
+    .inventory-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin: 16px 0 4px;
+      text-align: left;
+    }
+
+    .control-tip {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 9px 10px;
+      color: #e8ebf3;
+      font-size: 14px;
+    }
+
+    .control-tip strong {
+      color: #f2c84b;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+... (file continues)
