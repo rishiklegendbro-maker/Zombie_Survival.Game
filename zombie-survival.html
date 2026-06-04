@@ -1070,7 +1070,7 @@
       const ua = navigator.userAgent || navigator.vendor || window.opera || "";
       const hasTouch = navigator.maxTouchPoints > 0 || "ontouchstart" in window || window.matchMedia("(pointer: coarse)").matches;
       const isMobileUa = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
-      return hasTouch && isMobileUa;
+      return hasTouch || isMobileUa;
     }
 
     function showPhoneOnlyMessage() {
@@ -2807,6 +2807,7 @@
 
     if (splashStartButton) {
       splashStartButton.addEventListener("click", () => {
+        if (mobileNotice) mobileNotice.classList.add("hidden");
         if (username) {
           showHomePanel("home");
         } else {
