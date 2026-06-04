@@ -181,4 +181,2655 @@
       margin-bottom: 3px;
     }
 
-... (file continues)
+    .inventory-grid {
+      max-height: min(54vh, 430px);
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .item-card {
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 7px;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 10px;
+      text-align: left;
+    }
+
+    .item-card h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+
+    .item-card p {
+      margin: 4px 0;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .skin-preview {
+      width: 38px;
+      height: 52px;
+      border-radius: 6px 6px 4px 4px;
+      border: 2px solid rgba(255, 255, 255, 0.24);
+      margin-bottom: 8px;
+    }
+
+    .skin-button {
+      width: 100%;
+      margin-top: 8px;
+      padding: 9px 10px;
+      font-size: 13px;
+      background: #9ec7ff;
+    }
+
+    .skin-button:disabled {
+      background: #5c6170;
+      color: #d7dbe7;
+      cursor: default;
+    }
+
+    .name-input {
+      width: 100%;
+      margin: 12px 0 4px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 7px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      padding: 12px 13px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .profile-line,
+    .wallet-line,
+    .rating-line {
+      margin-top: 10px;
+      color: #e8ebf3;
+      font-size: 14px;
+    }
+
+    .rating-row {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    .rating-button {
+      min-width: 42px;
+      padding: 10px 8px;
+      background: #313846;
+      color: #f2c84b;
+      font-size: 18px;
+    }
+
+    .rating-button.active {
+      background: #f2c84b;
+      color: #1c1820;
+    }
+
+    .shop-button {
+      width: 100%;
+      margin-top: 8px;
+      padding: 9px 10px;
+      font-size: 13px;
+      background: #9ec7ff;
+    }
+
+    .shop-button:disabled {
+      background: #5c6170;
+      color: #d7dbe7;
+      cursor: default;
+    }
+
+    #continueButton,
+    #checkpointShopButton,
+    #gameOverHomeButton,
+    #restartButton {
+      margin: 12px 4px 0;
+    }
+
+    .vehicle-preview {
+      position: relative;
+      width: 90px;
+      height: 46px;
+      margin-bottom: 8px;
+    }
+
+    .vehicle-preview::before {
+      content: "";
+      position: absolute;
+      background: var(--vehicle-color);
+      border-radius: 10px;
+    }
+
+    .vehicle-preview span {
+      position: absolute;
+      background: #1c2029;
+      border-radius: 6px;
+    }
+
+    .vehicle-preview::after {
+      content: "";
+      position: absolute;
+      background: #1b1f27;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      bottom: 4px;
+      left: 14px;
+      box-shadow: 46px 0 #1b1f27;
+    }
+
+    .vehicle-preview.vehicle-0::before {
+      left: 22px;
+      top: 18px;
+      width: 46px;
+      height: 10px;
+      border-radius: 6px;
+    }
+    .vehicle-preview.vehicle-0 span {
+      left: 28px;
+      top: 10px;
+      width: 24px;
+      height: 6px;
+      border-radius: 4px;
+    }
+
+    .vehicle-preview.vehicle-1::before {
+      left: 16px;
+      top: 16px;
+      width: 58px;
+      height: 12px;
+      border-radius: 10px;
+    }
+    .vehicle-preview.vehicle-1 span {
+      left: 18px;
+      top: 8px;
+      width: 18px;
+      height: 8px;
+      border-radius: 5px;
+    }
+
+    .vehicle-preview.vehicle-2::before {
+      left: 12px;
+      top: 14px;
+      width: 62px;
+      height: 14px;
+      border-radius: 8px 8px 6px 6px;
+    }
+    .vehicle-preview.vehicle-2 span {
+      left: 14px;
+      top: 4px;
+      width: 24px;
+      height: 10px;
+      border-radius: 6px;
+      box-shadow: 16px 0 #1c2029;
+    }
+
+    .vehicle-preview.vehicle-3::before {
+      left: 14px;
+      top: 14px;
+      width: 60px;
+      height: 14px;
+      border-radius: 8px;
+    }
+    .vehicle-preview.vehicle-3 span {
+      left: 16px;
+      top: 6px;
+      width: 34px;
+      height: 10px;
+      border-radius: 6px;
+    }
+
+    .vehicle-preview.vehicle-4::before {
+      left: 18px;
+      top: 16px;
+      width: 50px;
+      height: 12px;
+      border-radius: 8px;
+    }
+    .vehicle-preview.vehicle-4 span {
+      left: 20px;
+      top: 6px;
+      width: 28px;
+      height: 10px;
+      border-radius: 6px;
+    }
+
+    .vehicle-preview.vehicle-5::before {
+      left: 16px;
+      top: 16px;
+      width: 56px;
+      height: 12px;
+      border-radius: 20px;
+    }
+    .vehicle-preview.vehicle-5 span {
+      left: 36px;
+      top: 0px;
+      width: 8px;
+      height: 36px;
+      border-radius: 4px;
+      background: #1c2029;
+    }
+
+    .mobile-only-message {
+      position: fixed;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      background: rgba(17, 20, 30, 0.96);
+      color: #f7f7f7;
+      padding: 26px;
+      text-align: center;
+      z-index: 30;
+    }
+
+    .mobile-only-message h1 {
+      margin: 0 0 12px;
+      font-size: clamp(28px, 5vw, 42px);
+    }
+
+    .mobile-only-message p {
+      margin: 0 0 18px;
+      font-size: 16px;
+      line-height: 1.5;
+      max-width: 520px;
+    }
+
+    .mobile-only-message button {
+      border: 0;
+      border-radius: 8px;
+      background: #f2c84b;
+      color: #1c1820;
+      padding: 14px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .splash-image {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: #12141d;
+    }
+
+    .splash-copy {
+      color: #d7dbe7;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0 0 18px;
+    }
+
+    .start-button,
+    .login-button {
+      width: 100%;
+      margin-top: 8px;
+      padding: 14px 16px;
+      font-size: 16px;
+      background: #f2c84b;
+      color: #1c1820;
+      border-radius: 9px;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .tiny-text {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #bfc7d5;
+      line-height: 1.5;
+    }
+
+    .touch-controls {
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: grid;
+      gap: 10px;
+      width: min(94vw, 420px);
+      pointer-events: auto;
+      z-index: 10;
+    }
+
+    .touch-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .touch-button {
+      border: 0;
+      border-radius: 14px;
+      background: rgba(242, 200, 75, 0.95);
+      color: #161616;
+      font-size: 14px;
+      padding: 16px 10px;
+      font-weight: 700;
+      touch-action: none;
+    }
+
+    .touch-button.shoot-button {
+      grid-column: span 3;
+      background: #e44b4b;
+      color: #ffffff;
+    }
+
+    .touch-button.full-width {
+      grid-column: span 3;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 700px) {
+      .hud {
+        grid-template-columns: 1fr;
+      }
+
+      .hud-right {
+        justify-content: flex-start;
+      }
+
+      .bar {
+        width: 130px;
+      }
+
+      .intro-grid,
+      .inventory-grid,
+      .menu-actions {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="game" width="1358" height="644" style="width: 1358px; height: 644px;"></canvas>
+
+  <div class="mobile-only-message hidden" id="mobileOnlyNotice">
+    <div>
+      <h1>Phone Only</h1>
+      <p>This game is playable only on mobile phones. Open Zombie Survival.Game from a phone browser to play.</p>
+      <button id="mobileOnlyReload">Check again</button>
+    </div>
+  </div>
+
+  <div class="hud hidden" id="hud">
+    <div class="hud-left">
+      <div class="pill" id="userText">Player</div>
+      <div class="pill">Health</div>
+      <div class="bar health">
+        <div class="fill" id="healthFill"></div>
+      </div>
+      <div class="pill">Kills</div>
+      <div class="bar xp">
+        <div class="fill" id="xpFill"></div>
+      </div>
+      <div class="pill" id="levelText">Player Lv 1</div>
+      <div class="pill" id="scoreText">Score 0</div>
+    </div>
+    <div class="hud-right">
+      <div class="pill" id="weaponText">Pistol</div>
+      <div class="pill" id="ammoText">12 / 12</div>
+      <div class="pill" id="skinText">Rookie Skin</div>
+      <div class="pill" id="vehicleText">On Foot</div>
+      <div class="pill" id="moneyText">$0</div>
+      <div class="pill" id="waveText">Stage 1</div>
+      <div class="pill" id="powerText">Time Freeze Ready</div>
+    </div>
+  </div>
+
+  <div class="center-card" id="menu">
+    <div class="hidden" id="splashScreen">
+      <h1>Zombie Survival.Game</h1>
+      <img class="splash-image" src="https://via.placeholder.com/640x320.png?text=Zombie+Survival.Game" alt="Zombie Survival.Game">
+      <p class="splash-copy">Survive hordes of zombies on your phone in this fast-paced touch shooter. Collect weapons, unlock skins and vehicles, and battle through checkpoints to become the top survivor.</p>
+      <button class="login-button" id="splashStartButton">PLAY NOW</button>
+      <p class="tiny-text">Open this page on your phone browser to play. If you want to share it, use the file on your phone or publish it online.</p>
+    </div>
+
+    <div class="hidden" id="loginScreen">
+      <h1>Login</h1>
+      <p>Enter your survivor name before starting the mission.</p>
+      <input class="name-input" id="usernameInput" maxlength="16" placeholder="Username">
+      <button class="login-button" id="loginButton">LOGIN</button>
+    </div>
+
+    <div class="hidden" id="homeScreen">
+      <h1>Zombie Survival.Game</h1>
+      <p id="welcomeText">Welcome, Player.</p>
+      <p>Cross far checkpoints to reach new stages. Kill zombies to raise your player level, earn money, and buy
+        stronger gear.</p>
+      <p>Boss zombies appear every 5 levels for extra challenge.</p>
+      <div class="wallet-line" id="walletText">Money: $0 | Best Player Lv: 1</div>
+      <div class="menu-actions">
+        <button id="startButton">START</button>
+        <button class="hidden" id="resumeButton">RESUME</button>
+        <button id="gunsButton">GUNS</button>
+        <button id="skinsButton">SKINS</button>
+        <button id="vehiclesButton">VEHICLES</button>
+      </div>
+      <div class="rating-line">Rate this game</div>
+      <div class="rating-row" id="ratingRow"><button class="rating-button" title="1 star rating">★</button><button
+          class="rating-button" title="2 star rating">★</button><button class="rating-button"
+          title="3 star rating">★</button><button class="rating-button" title="4 star rating">★</button><button
+          class="rating-button" title="5 star rating">★</button></div>
+      <div class="rating-line" id="ratingText">No rating yet</div>
+      <div class="intro-grid" id="controlTips">
+        <div class="control-tip"><strong>Move</strong>Arrow keys or WASD</div>
+        <div class="control-tip"><strong>Aim and Shoot</strong>Mouse + left click</div>
+        <div class="control-tip"><strong>Jump</strong>Up Arrow or W</div>
+        <div class="control-tip"><strong>Switch Guns</strong>Number keys 1-9, 0, - or Q/E</div>
+        <div class="control-tip"><strong>Switch Vehicles</strong>C/Z keys</div>
+        <div class="control-tip"><strong>Reload</strong>R key</div>
+        <div class="control-tip"><strong>Shield</strong>F key after Player Lv 2</div>
+      </div>
+    </div>
+
+    <div class="hidden" id="gunsScreen">
+      <h1>Guns</h1>
+      <div class="inventory-grid" id="gunsList"></div>
+      <button class="back-button" id="gunsBackButton">BACK</button>
+    </div>
+
+    <div class="hidden" id="skinsScreen">
+      <h1>Skins</h1>
+      <div class="inventory-grid" id="skinsList"></div>
+      <button class="back-button" id="skinsBackButton">BACK</button>
+    </div>
+
+    <div class="hidden" id="vehiclesScreen">
+      <h1>Vehicles</h1>
+      <div class="inventory-grid" id="vehiclesList"></div>
+      <button class="back-button" id="vehiclesBackButton">BACK</button>
+    </div>
+  </div>
+
+  <div class="center-card hidden" id="checkpointBreak">
+    <h1>Checkpoint</h1>
+    <p id="checkpointStats"></p>
+    <button id="continueButton">CONTINUE</button>
+    <button id="checkpointShopButton">SHOP</button>
+  </div>
+
+  <div class="center-card hidden" id="gameOver">
+    <h1>Game Over</h1>
+    <p id="finalStats"></p>
+    <button id="gameOverHomeButton">HOME</button>
+    <button id="restartButton">Restart</button>
+  </div>
+
+  <div class="touch-controls hidden" id="phoneControls">
+    <div class="touch-row">
+      <button class="touch-button" id="leftControl">←</button>
+      <button class="touch-button" id="jumpControl">↑</button>
+      <button class="touch-button" id="rightControl">→</button>
+    </div>
+    <div class="touch-row">
+      <button class="touch-button shoot-button" id="shootControl">SHOOT</button>
+    </div>
+    <div class="touch-row">
+      <button class="touch-button" id="weaponControl">WEAPON</button>
+      <button class="touch-button" id="reloadControl">RELOAD</button>
+      <button class="touch-button" id="vehicleControl">VEHICLE</button>
+    </div>
+    <div class="touch-row">
+      <button class="touch-button full-width" id="shieldControl">SHIELD</button>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById("game");
+    const ctx = canvas.getContext("2d");
+
+    const hud = document.getElementById("hud");
+    const userText = document.getElementById("userText");
+    const healthFill = document.getElementById("healthFill");
+    const xpFill = document.getElementById("xpFill");
+    const levelText = document.getElementById("levelText");
+    const scoreText = document.getElementById("scoreText");
+    const weaponText = document.getElementById("weaponText");
+    const ammoText = document.getElementById("ammoText");
+    const skinText = document.getElementById("skinText");
+    const vehicleText = document.getElementById("vehicleText");
+    const moneyText = document.getElementById("moneyText");
+    const waveText = document.getElementById("waveText");
+    const powerText = document.getElementById("powerText");
+    const menu = document.getElementById("menu");
+    const loginScreen = document.getElementById("loginScreen");
+    const homeScreen = document.getElementById("homeScreen");
+    const gunsScreen = document.getElementById("gunsScreen");
+    const skinsScreen = document.getElementById("skinsScreen");
+    const vehiclesScreen = document.getElementById("vehiclesScreen");
+    const gunsList = document.getElementById("gunsList");
+    const skinsList = document.getElementById("skinsList");
+    const vehiclesList = document.getElementById("vehiclesList");
+    const gameOver = document.getElementById("gameOver");
+    const finalStats = document.getElementById("finalStats");
+    const checkpointBreak = document.getElementById("checkpointBreak");
+    const checkpointStats = document.getElementById("checkpointStats");
+    const continueButton = document.getElementById("continueButton");
+    const checkpointShopButton = document.getElementById("checkpointShopButton");
+    const gameOverHomeButton = document.getElementById("gameOverHomeButton");
+    const usernameInput = document.getElementById("usernameInput");
+    const loginButton = document.getElementById("loginButton");
+    const welcomeText = document.getElementById("welcomeText");
+    const walletText = document.getElementById("walletText");
+    const ratingRow = document.getElementById("ratingRow");
+    const ratingText = document.getElementById("ratingText");
+    const startButton = document.getElementById("startButton");
+    const resumeButton = document.getElementById("resumeButton");
+    const gunsButton = document.getElementById("gunsButton");
+    const skinsButton = document.getElementById("skinsButton");
+    const vehiclesButton = document.getElementById("vehiclesButton");
+    const gunsBackButton = document.getElementById("gunsBackButton");
+    const skinsBackButton = document.getElementById("skinsBackButton");
+    const vehiclesBackButton = document.getElementById("vehiclesBackButton");
+    const restartButton = document.getElementById("restartButton");
+    const controlTips = document.getElementById("controlTips");
+    const phoneControls = document.getElementById("phoneControls");
+    const leftControl = document.getElementById("leftControl");
+    const rightControl = document.getElementById("rightControl");
+    const jumpControl = document.getElementById("jumpControl");
+    const shootControl = document.getElementById("shootControl");
+    const weaponControl = document.getElementById("weaponControl");
+    const reloadControl = document.getElementById("reloadControl");
+    const vehicleControl = document.getElementById("vehicleControl");
+    const shieldControl = document.getElementById("shieldControl");
+    const mobileNotice = document.getElementById("mobileOnlyNotice");
+    const mobileOnlyReload = document.getElementById("mobileOnlyReload");
+    const splashScreen = document.getElementById("splashScreen");
+    const splashStartButton = document.getElementById("splashStartButton");
+
+    const keys = new Set();
+    const mouse = { x: 0, y: 0, down: false };
+    const touchState = { left: false, right: false, jump: false, shoot: false };
+    let platformMode = "phone";
+
+    let width = 0;
+    let height = 0;
+    let worldWidth = 33000;
+    let groundY = 520;
+    let cameraX = 0;
+    let lastTime = 0;
+    let gameState = "menu";
+    let message = "";
+    let messageTimer = 0;
+
+    const gravity = 1900;
+
+    const skins = [
+      { name: "Rookie", level: 1, price: 0, hp: 100, body: "#2f79c8", pants: "#1e2430", trim: "#d7eefc" },
+      { name: "Street Guard", level: 3, price: 180, hp: 120, body: "#2f9b61", pants: "#202c24", trim: "#e8f6db" },
+      { name: "Medic", level: 5, price: 350, hp: 145, body: "#e7e8ea", pants: "#27313d", trim: "#df4f4f" },
+      { name: "Commando", level: 7, price: 560, hp: 170, body: "#566b3d", pants: "#1d2418", trim: "#f2c84b" },
+      { name: "Night Ops", level: 10, price: 850, hp: 205, body: "#343047", pants: "#151722", trim: "#9eb7ff" },
+    ];
+
+    const vehicles = [
+      { name: "Dirt Bike", level: 3, price: 300, speedBonus: 65, hpBonus: 8, color: "#e5c04b", note: "Light off-road bike for fast movement" },
+      { name: "ATV", level: 6, price: 650, speedBonus: 80, hpBonus: 28, color: "#4aa3ff", note: "All-terrain quad good for rough ground" },
+      { name: "Pickup Truck", level: 10, price: 1050, speedBonus: 55, hpBonus: 60, color: "#9aa0aa", note: "Reliable truck with solid durability" },
+      { name: "Armored SUV", level: 13, price: 1350, speedBonus: 90, hpBonus: 45, color: "#ff4500", note: "Fast armored crossover with extra protection" },
+      { name: "Military Jeep", level: 16, price: 1800, speedBonus: 35, hpBonus: 110, color: "#556b2f", note: "Rugged jeep built for combat zones" },
+      { name: "Rescue Helicopter", level: 20, price: 2500, speedBonus: 140, hpBonus: 35, color: "#00ced1", note: "Quick air support for fast relocations" },
+    ];
+
+    const powerUnlocks = [
+      { name: "Shield Power", level: 2 },
+      { name: "Barrier Device", level: 4 },
+      { name: "Longer Time Freeze", level: 6 },
+      { name: "Stronger Shield", level: 8 },
+    ];
+
+    let vehicleSoundTimer = 0;
+
+    const weapons = [
+      {
+        name: "Pistol",
+        level: 1,
+        price: 0,
+        type: "bullet",
+        damage: 22,
+        speed: 820,
+        cooldown: 0.26,
+        reload: 0.85,
+        mag: 12,
+        color: "#f1d170",
+        size: 4,
+        pellets: 1,
+        spread: 0,
+      },
+      {
+        name: "Shotgun",
+        level: 2,
+        price: 180,
+        type: "bullet",
+        damage: 13,
+        speed: 730,
+        cooldown: 0.74,
+        reload: 1.2,
+        mag: 6,
+        color: "#d88a4a",
+        size: 4,
+        pellets: 6,
+        spread: 0.34,
+      },
+      {
+        name: "Rifle",
+        level: 3,
+        price: 280,
+        type: "bullet",
+        damage: 15,
+        speed: 980,
+        cooldown: 0.12,
+        reload: 1.15,
+        mag: 30,
+        color: "#b8c0cc",
+        size: 3,
+        pellets: 1,
+        spread: 0.025,
+      },
+      {
+        name: "Barrier",
+        level: 4,
+        price: 340,
+        type: "barrier",
+        damage: 0,
+        speed: 0,
+        cooldown: 1.8,
+        reload: 1,
+        mag: 3,
+        color: "#73b7ff",
+        size: 0,
+        pellets: 1,
+        spread: 0,
+      },
+      {
+        name: "Bazooka",
+        level: 5,
+        price: 520,
+        type: "rocket",
+        damage: 78,
+        speed: 560,
+        cooldown: 1.05,
+        reload: 1.6,
+        mag: 4,
+        color: "#343944",
+        size: 7,
+        pellets: 1,
+        spread: 0,
+      },
+      {
+        name: "Flare Gun",
+        level: 7,
+        price: 720,
+        type: "flare",
+        damage: 26,
+        speed: 520,
+        cooldown: 0.62,
+        reload: 1.3,
+        mag: 5,
+        color: "#ef6b35",
+        size: 6,
+        pellets: 1,
+        spread: 0,
+      },
+      {
+        name: "Laser Gun",
+        level: 10,
+        price: 1150,
+        type: "laser",
+        damage: 38,
+        speed: 0,
+        cooldown: 0.2,
+        reload: 1.4,
+        mag: 18,
+        color: "#f05555",
+        size: 3,
+        pellets: 1,
+        spread: 0,
+      },
+      {
+        name: "Sniper Rifle",
+        level: 12,
+        price: 1400,
+        type: "bullet",
+        damage: 80,
+        speed: 1200,
+        cooldown: 1.5,
+        reload: 2.0,
+        mag: 5,
+        color: "#8b4513",
+        size: 5,
+        pellets: 1,
+        spread: 0.01,
+      },
+      {
+        name: "Machine Gun",
+        level: 14,
+        price: 1650,
+        type: "bullet",
+        damage: 12,
+        speed: 900,
+        cooldown: 0.08,
+        reload: 2.5,
+        mag: 50,
+        color: "#696969",
+        size: 4,
+        pellets: 1,
+        spread: 0.05,
+      },
+      {
+        name: "Grenade Launcher",
+        level: 16,
+        price: 1900,
+        type: "rocket",
+        damage: 100,
+        speed: 400,
+        cooldown: 1.2,
+        reload: 2.0,
+        mag: 3,
+        color: "#228b22",
+        size: 8,
+        pellets: 1,
+        spread: 0.1,
+      },
+      {
+        name: "Crossbow",
+        level: 18,
+        price: 2200,
+        type: "bullet",
+        damage: 50,
+        speed: 600,
+        cooldown: 0.5,
+        reload: 1.0,
+        mag: 8,
+        color: "#daa520",
+        size: 4,
+        pellets: 1,
+        spread: 0.02,
+      },
+    ];
+
+    const platforms = [
+      { x: 0, y: 520, w: worldWidth, h: 120, base: true },
+      { x: 1000, y: 430, w: 540, h: 42 },
+      { x: 2360, y: 385, w: 620, h: 42 },
+      { x: 3860, y: 440, w: 520, h: 42 },
+      { x: 5320, y: 395, w: 600, h: 42 },
+      { x: 6880, y: 435, w: 540, h: 42 },
+      { x: 8280, y: 385, w: 620, h: 42 },
+    ];
+    const platformOffsets = platforms.map((platform) => platform.y - 520);
+    const maxStage = 20;
+    const checkpoints = [
+      1500, 3000, 4500, 6000, 7500,
+      9000, 10500, 12000, 13500, 15000,
+      16500, 18000, 19500, 21000, 22500,
+      24000, 25500, 27000, 28500, 30000,
+    ];
+
+    let username = readSave("zombieSurvivalUsername", "");
+    let money = Number(readSave("zombieSurvivalMoney", "0"));
+    let rating = Number(readSave("zombieSurvivalRating", "0"));
+    let bestPlayerLevel = Number(readSave("zombieSurvivalBestLevel", "1"));
+    let selectedSkinIndex = Number(readSave("zombieSurvivalSkin", "0"));
+    let selectedVehicleIndex = Number(readSave("zombieSurvivalVehicle", "-1"));
+    let ownedWeapons = parseOwnedList("zombieSurvivalOwnedWeapons", [0]);
+    let ownedSkins = parseOwnedList("zombieSurvivalOwnedSkins", [0]);
+    let ownedVehicles = parseOwnedList("zombieSurvivalOwnedVehicles", []);
+    if (!ownedWeapons.includes(0)) ownedWeapons.push(0);
+    if (!ownedSkins.includes(0)) ownedSkins.push(0);
+    if (!Number.isFinite(money) || money < 0) money = 0;
+    if (!Number.isFinite(rating) || rating < 0 || rating > 5) rating = 0;
+    if (!Number.isFinite(bestPlayerLevel) || bestPlayerLevel < 1) bestPlayerLevel = 1;
+    if (!Number.isFinite(selectedSkinIndex) || selectedSkinIndex < 0 || selectedSkinIndex >= skins.length) {
+      selectedSkinIndex = 0;
+    }
+    if (!Number.isFinite(selectedVehicleIndex) || selectedVehicleIndex < -1 || selectedVehicleIndex >= vehicles.length) {
+      selectedVehicleIndex = -1;
+    }
+
+    let player;
+    let bullets;
+    let zombies;
+    let particles;
+    let barriers;
+    let burningZones;
+    let ammo;
+    let reloadTimer;
+    let selectedWeapon;
+    let fireTimer;
+    let stage;
+    let nextCheckpointIndex;
+    let pendingStage;
+    let spawnLeft;
+    let spawnTimer;
+    let score;
+    let kills;
+    let level;
+    let timeFreeze;
+    let timeFreezeCooldown;
+    let shield;
+    let shieldCooldown;
+    let hitFlash;
+    let waveGrace;
+
+    function resize() {
+      const dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
+      width = Math.floor(window.innerWidth);
+      height = Math.floor(window.innerHeight);
+      canvas.width = Math.floor(width * dpr);
+      canvas.height = Math.floor(height * dpr);
+      canvas.style.width = width + "px";
+      canvas.style.height = height + "px";
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      layoutPlatforms();
+      if (player && gameState === "playing") respawnPlayerOnRoof();
+    }
+
+    function readSave(key, fallback) {
+      try {
+        return localStorage.getItem(key) || fallback;
+      } catch (error) {
+        return fallback;
+      }
+    }
+
+    function parseOwnedList(key, fallback) {
+      try {
+        const saved = JSON.parse(readSave(key, JSON.stringify(fallback)));
+        if (Array.isArray(saved)) return [...new Set(saved.filter((item) => Number.isInteger(item)))];
+      } catch (error) {
+        return [...fallback];
+      }
+      return [...fallback];
+    }
+
+    function writeSave(key, value) {
+      try {
+        localStorage.setItem(key, value);
+      } catch (error) {
+        return;
+      }
+    }
+
+    function saveOwnedList(key, list) {
+      writeSave(key, JSON.stringify([...new Set(list)]));
+    }
+
+    function isPhoneDevice() {
+      const ua = navigator.userAgent || navigator.vendor || window.opera || "";
+      const hasTouch = navigator.maxTouchPoints > 0 || "ontouchstart" in window || window.matchMedia("(pointer: coarse)").matches;
+      const isMobileUa = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
+      return hasTouch && isMobileUa;
+    }
+
+    function showPhoneOnlyMessage() {
+      canvas.classList.add("hidden");
+      hud.classList.add("hidden");
+      menu.classList.add("hidden");
+      phoneControls.classList.add("hidden");
+      gameOver.classList.add("hidden");
+      checkpointBreak.classList.add("hidden");
+      if (mobileNotice) mobileNotice.classList.remove("hidden");
+    }
+
+    function hidePhoneOnlyMessage() {
+      if (mobileNotice) mobileNotice.classList.add("hidden");
+      canvas.classList.remove("hidden");
+    }
+
+    function layoutPlatforms() {
+      groundY = Math.max(300, height - 130);
+      const mainRoofY = groundY;
+      for (let i = 0; i < platforms.length; i += 1) {
+        platforms[i].y = mainRoofY + platformOffsets[i];
+      }
+      platforms[0].x = 0;
+      platforms[0].y = groundY;
+      platforms[0].w = worldWidth;
+      platforms[0].h = Math.max(220, height - groundY + 220);
+    }
+
+    function initGame() {
+      layoutPlatforms();
+      level = 1;
+      kills = 0;
+      stage = 1;
+      nextCheckpointIndex = 0;
+      pendingStage = 1;
+      if (!isSkinOwned(selectedSkinIndex)) selectedSkinIndex = 0;
+      if (!isVehicleOwned(selectedVehicleIndex)) selectedVehicleIndex = -1;
+      const chosenSkin = skins[selectedSkinIndex];
+      const chosenVehicle = getCurrentVehicle();
+      player = {
+        x: 120,
+        y: groundY - 56,
+        w: 34,
+        h: 56,
+        vx: 0,
+        vy: 0,
+        speed: 330 + (chosenVehicle ? chosenVehicle.speedBonus : 0),
+        jump: 760,
+        grounded: true,
+        facing: 1,
+        health: chosenSkin.hp + (chosenVehicle ? chosenVehicle.hpBonus : 0),
+        maxHealth: chosenSkin.hp + (chosenVehicle ? chosenVehicle.hpBonus : 0),
+        hurtCooldown: 0,
+      };
+      bullets = [];
+      zombies = [];
+      particles = [];
+      barriers = [];
+      burningZones = [];
+      ammo = weapons.map((weapon) => weapon.mag);
+      reloadTimer = 0;
+      if (!isWeaponOwned(selectedWeapon)) selectedWeapon = 0;
+      fireTimer = 0;
+      spawnLeft = 4;
+      spawnTimer = 1.1;
+      score = 0;
+      timeFreeze = 0;
+      timeFreezeCooldown = 0;
+      shield = 0;
+      shieldCooldown = 0;
+      hitFlash = 0;
+      waveGrace = 4.5;
+      message = "Get ready";
+      messageTimer = 4.5;
+      gameState = "playing";
+      menu.classList.add("hidden");
+      hud.classList.remove("hidden");
+      phoneControls.classList.remove("hidden");
+      gameOver.classList.add("hidden");
+      checkpointBreak.classList.add("hidden");
+    }
+
+    function unlockedWeapon(index) {
+      return isWeaponOwned(index);
+    }
+
+    function isWeaponOwned(index) {
+      return ownedWeapons.includes(index);
+    }
+
+    function canBuyWeapon(index) {
+      return weapons[index] && bestPlayerLevel >= weapons[index].level && money >= weapons[index].price;
+    }
+
+    function isSkinUnlocked(index) {
+      const unlockLevel = Math.max(level || 1, bestPlayerLevel || 1);
+      return skins[index] && unlockLevel >= skins[index].level;
+    }
+
+    function isSkinOwned(index) {
+      return ownedSkins.includes(index);
+    }
+
+    function canBuySkin(index) {
+      return skins[index] && bestPlayerLevel >= skins[index].level && money >= skins[index].price;
+    }
+
+    function isVehicleOwned(index) {
+      return index === -1 || ownedVehicles.includes(index);
+    }
+
+    function canBuyVehicle(index) {
+      return vehicles[index] && bestPlayerLevel >= vehicles[index].level && money >= vehicles[index].price;
+    }
+
+    function getCurrentVehicle() {
+      if (!isVehicleOwned(selectedVehicleIndex)) selectedVehicleIndex = -1;
+      return selectedVehicleIndex >= 0 ? vehicles[selectedVehicleIndex] : null;
+    }
+
+    function shieldUnlocked() {
+      return level >= 2;
+    }
+
+    function getCurrentSkin() {
+      if (!isSkinOwned(selectedSkinIndex)) selectedSkinIndex = 0;
+      return skins[selectedSkinIndex];
+    }
+
+    function getUnlocksForLevel(newLevel) {
+      const gunUnlocks = weapons
+        .filter((weapon) => weapon.level === newLevel)
+        .map((weapon) => weapon.name);
+      const skinUnlocks = skins
+        .filter((skin) => skin.level === newLevel && skin.level !== 1)
+        .map((skin) => skin.name + " Skin");
+      const powerNames = powerUnlocks
+        .filter((power) => power.level === newLevel)
+        .map((power) => power.name);
+      const vehicleUnlocks = vehicles
+        .filter((vehicle) => vehicle.level === newLevel)
+        .map((vehicle) => vehicle.name + " Vehicle");
+
+      return [...gunUnlocks, ...skinUnlocks, ...vehicleUnlocks, ...powerNames];
+    }
+
+    function bestSkinIndexForLevel(sourceLevel) {
+      let bestIndex = 0;
+      for (let i = 0; i < skins.length; i += 1) {
+        if (sourceLevel >= skins[i].level) bestIndex = i;
+      }
+      return bestIndex;
+    }
+
+    function equipSkin(index) {
+      if (!isSkinOwned(index)) {
+        showMessage(skins[index].name + " is not bought yet");
+        return;
+      }
+
+      selectedSkinIndex = index;
+      writeSave("zombieSurvivalSkin", String(index));
+      if (player) {
+        const oldMax = player.maxHealth;
+        const currentVehicle = getCurrentVehicle();
+        player.maxHealth = skins[index].hp + (currentVehicle ? currentVehicle.hpBonus : 0);
+        player.health = Math.min(player.maxHealth, player.health + Math.max(0, player.maxHealth - oldMax));
+      }
+      renderSkinsList();
+      showMessage(skins[index].name + " equipped");
+    }
+
+    function buyWeapon(index) {
+      const weapon = weapons[index];
+      if (!weapon || isWeaponOwned(index)) return;
+      if (bestPlayerLevel < weapon.level) {
+        showMessage(weapon.name + " unlocks at Player Lv " + weapon.level);
+        return;
+      }
+      if (money < weapon.price) {
+        showMessage("Need $" + (weapon.price - money) + " more");
+        return;
+      }
+      money -= weapon.price;
+      ownedWeapons.push(index);
+      selectedWeapon = index;
+      saveOwnedList("zombieSurvivalOwnedWeapons", ownedWeapons);
+      writeSave("zombieSurvivalMoney", String(money));
+      renderGunsList();
+      updateWalletText();
+      showMessage(weapon.name + " bought");
+    }
+
+    function buySkin(index) {
+      const skin = skins[index];
+      if (!skin || isSkinOwned(index)) return;
+      if (bestPlayerLevel < skin.level) {
+        showMessage(skin.name + " unlocks at Player Lv " + skin.level);
+        return;
+      }
+      if (money < skin.price) {
+        showMessage("Need $" + (skin.price - money) + " more");
+        return;
+      }
+      money -= skin.price;
+      ownedSkins.push(index);
+      saveOwnedList("zombieSurvivalOwnedSkins", ownedSkins);
+      writeSave("zombieSurvivalMoney", String(money));
+      equipSkin(index);
+      updateWalletText();
+    }
+
+    function buyVehicle(index) {
+      const vehicle = vehicles[index];
+      if (!vehicle || isVehicleOwned(index)) return;
+      if (bestPlayerLevel < vehicle.level) {
+        showMessage(vehicle.name + " unlocks at Player Lv " + vehicle.level);
+        return;
+      }
+      if (money < vehicle.price) {
+        showMessage("Need $" + (vehicle.price - money) + " more");
+        return;
+      }
+      money -= vehicle.price;
+      ownedVehicles.push(index);
+      selectedVehicleIndex = index;
+      saveOwnedList("zombieSurvivalOwnedVehicles", ownedVehicles);
+      writeSave("zombieSurvivalVehicle", String(selectedVehicleIndex));
+      writeSave("zombieSurvivalMoney", String(money));
+      if (player) {
+        const currentSkin = getCurrentSkin();
+        player.speed = 330 + vehicle.speedBonus;
+        player.maxHealth = currentSkin.hp + vehicle.hpBonus;
+        player.health = Math.min(player.maxHealth, player.health + vehicle.hpBonus);
+      }
+      renderVehiclesList();
+      updateWalletText();
+      showMessage(vehicle.name + " bought");
+    }
+
+    function equipVehicle(index) {
+      if (!isVehicleOwned(index)) {
+        showMessage(vehicles[index] ? vehicles[index].name + " is not bought yet" : "Vehicle not available");
+        return;
+      }
+      selectedVehicleIndex = index;
+      writeSave("zombieSurvivalVehicle", String(index));
+      if (player) {
+        const currentSkin = getCurrentSkin();
+        if (index >= 0) {
+          player.speed = 330 + vehicles[index].speedBonus;
+          player.maxHealth = currentSkin.hp + vehicles[index].hpBonus;
+          player.health = Math.min(player.maxHealth, player.health + vehicles[index].hpBonus);
+        } else {
+          player.speed = 330;
+          player.maxHealth = currentSkin.hp;
+          player.health = Math.min(player.health, player.maxHealth);
+        }
+      }
+      renderVehiclesList();
+      updateWalletText();
+      showMessage(index === -1 ? "On Foot equipped" : vehicles[index].name + " equipped");
+    }
+
+    function showHomePanel(panel) {
+      updateWalletText();
+      splashScreen.classList.toggle("hidden", panel !== "splash");
+      loginScreen.classList.toggle("hidden", panel !== "login");
+      homeScreen.classList.toggle("hidden", panel !== "home");
+      gunsScreen.classList.toggle("hidden", panel !== "guns");
+      skinsScreen.classList.toggle("hidden", panel !== "skins");
+      vehiclesScreen.classList.toggle("hidden", panel !== "vehicles");
+      phoneControls.classList.add("hidden");
+      if (panel === "guns") renderGunsList();
+      if (panel === "skins") renderSkinsList();
+      if (panel === "vehicles") renderVehiclesList();
+      if (panel === "home" || panel === "login") renderControlTips();
+    }
+
+    function renderControlTips() {
+      if (!controlTips) return;
+      if (platformMode === "phone") {
+        controlTips.innerHTML = `
+          <div class="control-tip"><strong>Move</strong>Tap left / right buttons</div>
+          <div class="control-tip"><strong>Aim</strong>Touch screen to aim</div>
+          <div class="control-tip"><strong>Shoot</strong>Tap SHOOT</div>
+          <div class="control-tip"><strong>Jump</strong>Tap ↑</div>
+          <div class="control-tip"><strong>Switch Guns</strong>Use WEAPON button</div>
+          <div class="control-tip"><strong>Switch Vehicles</strong>Use VEHICLE button</div>
+          <div class="control-tip"><strong>Reload</strong>Auto reloads when empty</div>
+          <div class="control-tip"><strong>Shield</strong>Tap F after Player Lv 2</div>
+        `;
+      } else {
+        controlTips.innerHTML = `
+          <div class="control-tip"><strong>Move</strong>Arrow keys or WASD</div>
+          <div class="control-tip"><strong>Aim and Shoot</strong>Mouse + left click</div>
+          <div class="control-tip"><strong>Jump</strong>Up Arrow or W</div>
+          <div class="control-tip"><strong>Switch Guns</strong>Number keys 1-9, 0, - or Q/E</div>
+          <div class="control-tip"><strong>Switch Vehicles</strong>C/Z keys</div>
+          <div class="control-tip"><strong>Reload</strong>R key</div>
+          <div class="control-tip"><strong>Shield</strong>F key after Player Lv 2</div>
+        `;
+      }
+    }
+
+    function updateWalletText() {
+      welcomeText.textContent = "Welcome, " + (username || "Player") + ".";
+      walletText.textContent = "Money: $" + money + " | Best Player Lv: " + bestPlayerLevel;
+      resumeButton.classList.toggle("hidden", gameState !== "shopBreak");
+      startButton.classList.toggle("hidden", gameState === "shopBreak");
+      if (moneyText) moneyText.textContent = "$" + money;
+      if (userText) userText.textContent = username || "Player";
+      renderRating();
+    }
+
+    function renderGunsList() {
+      gunsList.innerHTML = weapons.map((weapon, index) => {
+        const owned = isWeaponOwned(index);
+        const locked = bestPlayerLevel < weapon.level;
+        const power = Math.round(weapon.damage * (weapon.pellets || 1));
+        const special = weapon.type === "barrier"
+          ? "Creates a temporary shield wall"
+          : weapon.type === "rocket"
+            ? "Explosive area damage"
+            : weapon.type === "laser"
+              ? "Instant beam damage"
+              : weapon.type === "flare"
+                ? "Burning zone damage"
+                : weapon.pellets > 1
+                  ? "Close range spread"
+                  : "Standard bullet weapon";
+
+        return `
+          <div class="item-card">
+            <h3>${index + 1}. ${weapon.name}</h3>
+            <p>Unlock: Player Lv ${weapon.level}</p>
+            <p>Price: ${weapon.price === 0 ? "Free" : "$" + weapon.price}</p>
+            <p>Power: ${power}</p>
+            <p>Magazine: ${weapon.mag}</p>
+            <p>${special}</p>
+            <button class="shop-button" data-gun="${index}" ${owned ? "" : locked || money < weapon.price ? "disabled" : ""}>${owned ? selectedWeapon === index ? "EQUIPPED" : "EQUIP" : locked ? "LOCKED" : money >= weapon.price ? "BUY" : "NEED $" + (weapon.price - money)}</button>
+          </div>
+        `;
+      }).join("");
+
+      gunsList.querySelectorAll("[data-gun]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const index = Number(button.dataset.gun);
+          if (isWeaponOwned(index)) selectWeapon(index);
+          else buyWeapon(index);
+          renderGunsList();
+        });
+      });
+    }
+
+    function renderSkinsList() {
+      skinsList.innerHTML = skins.map((skin, index) => {
+        const owned = isSkinOwned(index);
+        const locked = bestPlayerLevel < skin.level;
+        const selected = selectedSkinIndex === index;
+
+        return `
+          <div class="item-card">
+            <div class="skin-preview" style="background: linear-gradient(${skin.body} 0 62%, ${skin.pants} 62% 100%); border-color: ${skin.trim};"></div>
+            <h3>${skin.name}</h3>
+            <p>Unlock: Player Lv ${skin.level}</p>
+            <p>Price: ${skin.price === 0 ? "Free" : "$" + skin.price}</p>
+            <p>HP: ${skin.hp}</p>
+            <button class="skin-button" data-skin="${index}" ${owned ? "" : locked || money < skin.price ? "disabled" : ""}>${owned ? selected ? "EQUIPPED" : "EQUIP" : locked ? "LOCKED" : money >= skin.price ? "BUY" : "NEED $" + (skin.price - money)}</button>
+          </div>
+        `;
+      }).join("");
+
+      skinsList.querySelectorAll("[data-skin]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const index = Number(button.dataset.skin);
+          if (isSkinOwned(index)) equipSkin(index);
+          else buySkin(index);
+          renderSkinsList();
+        });
+      });
+    }
+
+    function renderVehiclesList() {
+      vehiclesList.innerHTML = vehicles.map((vehicle, index) => {
+        const owned = isVehicleOwned(index);
+        const locked = bestPlayerLevel < vehicle.level;
+        const selected = selectedVehicleIndex === index;
+
+        return `
+          <div class="item-card">
+            <div class="vehicle-preview vehicle-${index}" style="--vehicle-color: ${vehicle.color};"><span></span></div>
+            <h3>${vehicle.name}</h3>
+            <p>Unlock: Player Lv ${vehicle.level}</p>
+            <p>Price: $${vehicle.price}</p>
+            <p>Speed Bonus: +${vehicle.speedBonus}</p>
+            <p>HP Bonus: +${vehicle.hpBonus}</p>
+            <p>${vehicle.note}</p>
+            <button class="shop-button" data-vehicle="${index}" ${owned ? "" : locked || money < vehicle.price ? "disabled" : ""}>${owned ? selected ? "EQUIPPED" : "EQUIP" : locked ? "LOCKED" : money >= vehicle.price ? "BUY" : "NEED $" + (vehicle.price - money)}</button>
+          </div>
+        `;
+      }).join("");
+
+      vehiclesList.querySelectorAll("[data-vehicle]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const index = Number(button.dataset.vehicle);
+          if (isVehicleOwned(index)) equipVehicle(index);
+          else buyVehicle(index);
+          renderVehiclesList();
+        });
+      });
+    }
+
+    function loginPlayer() {
+      const cleaned = usernameInput.value.trim().replace(/[<>]/g, "").slice(0, 16);
+      username = cleaned || "Player";
+      writeSave("zombieSurvivalUsername", username);
+      showHomePanel("home");
+    }
+
+    function renderRating() {
+      ratingRow.innerHTML = "";
+      for (let i = 1; i <= 5; i += 1) {
+        const button = document.createElement("button");
+        button.className = "rating-button" + (i <= rating ? " active" : "");
+        button.textContent = "★";
+        button.title = i + " star rating";
+        button.addEventListener("click", () => setRating(i));
+        ratingRow.appendChild(button);
+      }
+      ratingText.textContent = rating ? "Your rating: " + rating + " / 5" : "No rating yet";
+    }
+
+    function setRating(value) {
+      rating = value;
+      writeSave("zombieSurvivalRating", String(rating));
+      renderRating();
+    }
+
+    function selectWeapon(index) {
+      if (!weapons[index] || !unlockedWeapon(index)) {
+        if (weapons[index]) showMessage(weapons[index].name + " must be bought in GUNS");
+        return;
+      }
+      selectedWeapon = index;
+      reloadTimer = 0;
+      showMessage(weapons[index].name + " equipped");
+    }
+
+    function cycleWeapon(direction) {
+      for (let step = 1; step <= weapons.length; step += 1) {
+        const next = (selectedWeapon + direction * step + weapons.length) % weapons.length;
+        if (unlockedWeapon(next)) {
+          selectWeapon(next);
+          return;
+        }
+      }
+    }
+
+    function cycleVehicle(direction) {
+      const vehicleIndexes = [-1, ...vehicles.keys()];
+      const currentPosition = selectedVehicleIndex === -1 ? 0 : selectedVehicleIndex + 1;
+      const totalPositions = vehicleIndexes.length;
+      for (let step = 1; step < totalPositions; step += 1) {
+        const nextPosition = (currentPosition + direction * step + totalPositions) % totalPositions;
+        const nextVehicleIndex = vehicleIndexes[nextPosition];
+        if (isVehicleOwned(nextVehicleIndex)) {
+          equipVehicle(nextVehicleIndex);
+          const vehicleName = nextVehicleIndex === -1 ? "On Foot" : vehicles[nextVehicleIndex].name;
+          showMessage(vehicleName + " equipped");
+          return;
+        }
+      }
+    }
+
+    function activateShield() {
+      if (!shieldUnlocked()) {
+        showMessage("Shield unlocks at Player Lv 2");
+        return;
+      }
+      if (shield > 0) return;
+      if (shieldCooldown > 0) {
+        showMessage("Shield ready in " + Math.ceil(shieldCooldown) + "s");
+        return;
+      }
+
+      shield = level >= 8 ? 5.5 : 4;
+      shieldCooldown = level >= 8 ? 9 : 12;
+      showMessage("Shield active");
+    }
+
+    function showMessage(text) {
+      message = text;
+      messageTimer = 1.6;
+    }
+
+    function worldMouse() {
+      return { x: mouse.x + cameraX, y: mouse.y };
+    }
+
+    function getWeaponBase() {
+      return {
+        x: player.x + player.w / 2,
+        y: player.y + 30,
+      };
+    }
+
+    function aimAngle() {
+      const target = worldMouse();
+      const base = getWeaponBase();
+      return Math.atan2(target.y - base.y, target.x - base.x);
+    }
+
+    function getMuzzle() {
+      const base = getWeaponBase();
+      const angle = aimAngle();
+      const weapon = weapons[selectedWeapon] || weapons[0];
+      const lengths = {
+        pistol: 38,
+        bullet: weapon.name === "Rifle" ? 60 : weapon.name === "Shotgun" ? 54 : 38,
+        rocket: 68,
+        flare: 44,
+        laser: 58,
+        barrier: 34,
+      };
+      const length = lengths[weapon.type] || 42;
+      return {
+        x: base.x + Math.cos(angle) * length,
+        y: base.y + Math.sin(angle) * length,
+      };
+    }
+
+    function shoot() {
+      const weapon = weapons[selectedWeapon];
+      if (reloadTimer > 0 || fireTimer > 0) return;
+
+      if (ammo[selectedWeapon] <= 0) {
+        reloadTimer = weapon.reload;
+        return;
+      }
+
+      ammo[selectedWeapon] -= 1;
+      fireTimer = weapon.cooldown;
+
+      if (weapon.type === "barrier") {
+        placeBarrier();
+        return;
+      }
+
+      if (weapon.type === "laser") {
+        fireLaser(weapon);
+        return;
+      }
+
+      const base = aimAngle();
+      const muzzle = getMuzzle();
+      for (let i = 0; i < weapon.pellets; i += 1) {
+        const offset = weapon.pellets === 1 ? 0 : (Math.random() - 0.5) * weapon.spread;
+        const angle = base + offset;
+        bullets.push({
+          x: muzzle.x,
+          y: muzzle.y,
+          vx: Math.cos(angle) * weapon.speed,
+          vy: Math.sin(angle) * weapon.speed,
+          life: weapon.type === "rocket" ? 2.4 : 1.35,
+          damage: weapon.damage,
+          size: weapon.size,
+          color: weapon.color,
+          type: weapon.type,
+          radius: weapon.type === "rocket" ? 105 : 0,
+        });
+      }
+    }
+
+    function fireLaser(weapon) {
+      const angle = aimAngle();
+      const start = getMuzzle();
+      const end = {
+        x: start.x + Math.cos(angle) * 900,
+        y: start.y + Math.sin(angle) * 900,
+      };
+
+      bullets.push({
+        x: start.x,
+        y: start.y,
+        endX: end.x,
+        endY: end.y,
+        life: 0.08,
+        damage: 0,
+        type: "laserBeam",
+        color: weapon.color,
+      });
+
+      for (const zombie of zombies) {
+        const distance = distancePointToSegment(zombie.x + zombie.w / 2, zombie.y + zombie.h / 2, start.x, start.y, end.x, end.y);
+        if (distance < 28) damageZombie(zombie, weapon.damage);
+      }
+    }
+
+    function placeBarrier() {
+      const direction = player.facing || 1;
+      barriers.push({
+        x: player.x + direction * 74,
+        y: player.y + 4,
+        w: 24,
+        h: 78,
+        life: 7,
+        health: 160 + level * 18,
+      });
+      showMessage("Barrier placed");
+    }
+
+    function reload() {
+      const weapon = weapons[selectedWeapon];
+      if (reloadTimer <= 0 && ammo[selectedWeapon] < weapon.mag) {
+        reloadTimer = weapon.reload;
+      }
+    }
+
+    function spawnZombie() {
+      const platform = platforms[0];
+      const distance = clamp(width * (0.72 + Math.random() * 0.22), 360, 720);
+      let x = player.x + distance;
+      x = clamp(x, platform.x + 35, platform.x + platform.w - 80);
+
+      const boss = stage % 5 === 0 && spawnLeft === 1;
+      const runner = !boss && stage >= 3 && Math.random() < Math.min(0.1 + stage * 0.018, 0.34);
+      const baseSpeed = 44 + stage * 7;
+      zombies.push({
+        x,
+        y: groundY - (boss ? 86 : 58),
+        w: boss ? 56 : 34,
+        h: boss ? 86 : 58,
+        vx: 0,
+        vy: 0,
+        speed: boss ? baseSpeed + 38 : runner ? baseSpeed + 48 : baseSpeed,
+        health: boss ? 260 + stage * 45 : runner ? 45 + stage * 10 : 65 + stage * 13,
+        maxHealth: boss ? 260 + stage * 45 : runner ? 45 + stage * 10 : 65 + stage * 13,
+        damage: boss ? 18 : runner ? 8 : 11,
+        attackTimer: 0,
+        grounded: false,
+        boss,
+        runner,
+        burn: 0,
+      });
+    }
+
+    function startStage(newStage) {
+      stage = newStage;
+      spawnLeft = 3 + stage * 2 + (stage % 5 === 0 ? 1 : 0);
+      spawnTimer = 1.3;
+      waveGrace = 3;
+      showMessage("Checkpoint - Stage " + stage);
+      gameState = "playing";
+      checkpointBreak.classList.add("hidden");
+    }
+
+    function updateCheckpoints() {
+      if (nextCheckpointIndex >= checkpoints.length) return;
+      if (player.x + player.w / 2 >= checkpoints[nextCheckpointIndex]) {
+        completeCheckpoint();
+      }
+    }
+
+    function completeCheckpoint() {
+      const reward = 120 + stage * 80 + kills * 3;
+      money += reward;
+      writeSave("zombieSurvivalMoney", String(money));
+      nextCheckpointIndex += 1;
+      zombies = [];
+      bullets = [];
+      barriers = [];
+      burningZones = [];
+      spawnLeft = 0;
+      mouse.down = false;
+      gameState = "break";
+      if (stage >= maxStage) {
+        pendingStage = stage;
+        checkpointStats.textContent = "Stage " + stage + " completed. You beat all " + maxStage + " stages!";
+      } else {
+        pendingStage = stage + 1;
+        checkpointStats.textContent = "Stage " + stage + " completed. Reward: $" + reward + ". Total money: $" + money + ". Next: Stage " + pendingStage + ".";
+      }
+      checkpointBreak.classList.remove("hidden");
+      updateWalletText();
+      updateHud();
+    }
+
+    function continueFromCheckpoint() {
+      menu.classList.add("hidden");
+      hud.classList.remove("hidden");
+      phoneControls.classList.remove("hidden");
+      if (stage >= maxStage) {
+        returnToHome();
+      }
+      startStage(pendingStage);
+    }
+
+    function openShopFromCheckpoint() {
+      gameState = "shopBreak";
+      checkpointBreak.classList.add("hidden");
+      hud.classList.add("hidden");
+      menu.classList.remove("hidden");
+      showHomePanel("home");
+    }
+
+    function returnToHome() {
+      gameState = "menu";
+      player = null;
+      zombies = [];
+      bullets = [];
+      barriers = [];
+      burningZones = [];
+      checkpointBreak.classList.add("hidden");
+      gameOver.classList.add("hidden");
+      hud.classList.add("hidden");
+      menu.classList.remove("hidden");
+      showHomePanel("home");
+    }
+
+    function update(dt) {
+      if (gameState !== "playing") return;
+
+      if (messageTimer > 0) messageTimer -= dt;
+      if (hitFlash > 0) hitFlash -= dt;
+      if (fireTimer > 0) fireTimer -= dt;
+      if (player.hurtCooldown > 0) player.hurtCooldown -= dt;
+      if (timeFreeze > 0) timeFreeze -= dt;
+      if (timeFreezeCooldown > 0) timeFreezeCooldown -= dt;
+      if (shield > 0) shield -= dt;
+      if (shieldCooldown > 0) shieldCooldown -= dt;
+      if (waveGrace > 0) {
+        waveGrace -= dt;
+        message = "Stage " + stage + " - Get ready " + Math.max(1, Math.ceil(waveGrace));
+        messageTimer = 0.25;
+      }
+
+      if (reloadTimer > 0) {
+        reloadTimer -= dt;
+        if (reloadTimer <= 0) {
+          ammo[selectedWeapon] = weapons[selectedWeapon].mag;
+        }
+      }
+
+      updatePlayer(dt);
+      updateCheckpoints();
+
+      if (platformMode === "phone" && touchState.shoot) {
+        if (!mouse.down && player) {
+          mouse.x = player.x + player.w / 2 + player.facing * 150;
+          mouse.y = player.y + player.h / 2;
+        }
+      }
+      if (mouse.down || (platformMode === "phone" && touchState.shoot)) shoot();
+
+      if (spawnLeft > 0) {
+        if (waveGrace <= 0) {
+          spawnTimer -= dt;
+          if (spawnTimer <= 0) {
+            spawnZombie();
+            spawnLeft -= 1;
+            spawnTimer = Math.max(0.95, 1.9 - stage * 0.06);
+          }
+        }
+      }
+
+      const enemyDt = waveGrace > 0 ? 0 : timeFreeze > 0 ? dt * 0.08 : dt;
+      updateZombies(enemyDt);
+      updateBullets(dt);
+      updateBarriers(dt);
+      updateBurningZones(dt);
+      updateParticles(dt);
+      updateLevel();
+      updateCamera();
+      updateHud();
+
+      updateVehicleSound(dt);
+      if (player.health <= 0) endGame();
+    }
+
+    function updatePlayer(dt) {
+      const left = platformMode === "phone"
+        ? touchState.left
+        : keys.has("ArrowLeft") || keys.has("KeyA");
+      const right = platformMode === "phone"
+        ? touchState.right
+        : keys.has("ArrowRight") || keys.has("KeyD");
+      const jumpPress = platformMode === "phone"
+        ? touchState.jump
+        : keys.has("ArrowUp") || keys.has("KeyW");
+
+      player.vx = 0;
+      if (left) player.vx -= player.speed;
+      if (right) player.vx += player.speed;
+      if (player.vx !== 0) player.facing = Math.sign(player.vx);
+      if (player.vx !== 0 && getCurrentVehicle()) {
+      }
+
+      if (jumpPress && player.grounded) {
+        player.vy = -player.jump;
+        player.grounded = false;
+      }
+
+      player.vy += gravity * dt;
+      player.x += player.vx * dt;
+      player.y += player.vy * dt;
+      player.x = clamp(player.x, 0, worldWidth - player.w);
+      resolvePlatforms(player);
+
+      if (player.y > height + 260) {
+        player.health -= 18;
+        hitFlash = 0.2;
+        respawnPlayerOnRoof();
+      }
+    }
+
+    function updateVehicleSound(dt) {
+      if (vehicleSoundTimer > 0) vehicleSoundTimer = Math.max(0, vehicleSoundTimer - dt);
+    }
+
+    function respawnPlayerOnRoof() {
+      const platform = nearestPlatform(player.x);
+      player.x = clamp(player.x, platform.x + 30, platform.x + platform.w - 70);
+      player.y = groundY - player.h;
+      player.vy = 0;
+      player.grounded = true;
+    }
+
+    function updateZombies(dt) {
+      for (const zombie of zombies) {
+        const direction = Math.sign(player.x - zombie.x) || 1;
+        zombie.vx = direction * zombie.speed;
+        zombie.vy += gravity * dt;
+        zombie.x += zombie.vx * dt;
+        zombie.y += zombie.vy * dt;
+        resolvePlatforms(zombie);
+
+        if (!onAnyPlatform(zombie)) {
+          zombie.vx *= -1;
+        }
+
+        for (const barrier of barriers) {
+          if (rectsOverlap(zombie, barrier)) {
+            zombie.x -= direction * zombie.speed * dt;
+            zombie.attackTimer -= dt;
+            if (zombie.attackTimer <= 0) {
+              barrier.health -= zombie.damage * 2.6;
+              zombie.attackTimer = 0.55;
+              createHitParticles(barrier.x + barrier.w / 2, barrier.y + barrier.h / 2, "#86bfff", 5);
+            }
+          }
+        }
+
+        for (const zone of burningZones) {
+          if (zombie.x + zombie.w > zone.x - zone.radius && zombie.x < zone.x + zone.radius && Math.abs(zombie.y + zombie.h - zone.y) < 95) {
+            zombie.burn = 0.4;
+            damageZombie(zombie, zone.damage * dt);
+          }
+        }
+
+        if (zombie.burn > 0) zombie.burn -= dt;
+
+        const closeToPlayer = rectsOverlap(
+          { x: zombie.x - 12, y: zombie.y, w: zombie.w + 24, h: zombie.h },
+          player
+        );
+        if (closeToPlayer) {
+          zombie.attackTimer -= dt;
+          if (zombie.attackTimer <= 0) {
+            if (shield > 0) {
+              zombie.x -= direction * 34;
+              createHitParticles(zombie.x + zombie.w / 2, zombie.y + zombie.h / 2, "#73b7ff", 7);
+            } else {
+              player.health -= zombie.damage;
+              player.hurtCooldown = 0.18;
+              hitFlash = 0.16;
+            }
+            zombie.attackTimer = zombie.boss ? 0.7 : 0.52;
+          }
+        } else {
+          zombie.attackTimer = Math.max(0, zombie.attackTimer - dt);
+        }
+      }
+
+      zombies = zombies.filter((zombie) => zombie.health > 0 && zombie.y < height + 420);
+    }
+
+    function updateBullets(dt) {
+      for (const bullet of bullets) {
+        bullet.life -= dt;
+
+        if (bullet.type === "laserBeam") continue;
+
+        bullet.x += bullet.vx * dt;
+        bullet.y += bullet.vy * dt;
+
+        if (bullet.type === "rocket" || bullet.type === "flare") {
+          bullet.vy += gravity * 0.18 * dt;
+        }
+
+        if (bullet.type === "flare" && bullet.life <= 0.15) {
+          createBurningZone(bullet.x, bullet.y);
+          bullet.life = 0;
+        }
+
+        for (const platform of platforms) {
+          if (bullet.x > platform.x && bullet.x < platform.x + platform.w && bullet.y > platform.y && bullet.y < platform.y + platform.h) {
+            if (bullet.type === "rocket") explode(bullet.x, bullet.y, bullet.radius, bullet.damage);
+            if (bullet.type === "flare") createBurningZone(bullet.x, platform.y);
+            bullet.life = 0;
+          }
+        }
+
+        for (const zombie of zombies) {
+          if (bullet.life <= 0) break;
+          if (circleRectOverlap(bullet.x, bullet.y, bullet.size + 4, zombie)) {
+            if (bullet.type === "rocket") {
+              explode(bullet.x, bullet.y, bullet.radius, bullet.damage);
+            } else if (bullet.type === "flare") {
+              damageZombie(zombie, bullet.damage);
+              createBurningZone(bullet.x, bullet.y);
+            } else {
+              damageZombie(zombie, bullet.damage);
+              createHitParticles(bullet.x, bullet.y, "#d9d9d9", 4);
+            }
+            bullet.life = 0;
+          }
+        }
+      }
+
+      bullets = bullets.filter((bullet) => bullet.life > 0);
+    }
+
+    function updateBarriers(dt) {
+      for (const barrier of barriers) {
+        barrier.life -= dt;
+      }
+      barriers = barriers.filter((barrier) => barrier.life > 0 && barrier.health > 0);
+    }
+
+    function updateBurningZones(dt) {
+      for (const zone of burningZones) {
+        zone.life -= dt;
+        zone.pulse += dt * 9;
+      }
+      burningZones = burningZones.filter((zone) => zone.life > 0);
+    }
+
+    function updateParticles(dt) {
+      for (const particle of particles) {
+        particle.life -= dt;
+        particle.x += particle.vx * dt;
+        particle.y += particle.vy * dt;
+        particle.vy += gravity * 0.35 * dt;
+      }
+      particles = particles.filter((particle) => particle.life > 0);
+    }
+
+    function updateLevel() {
+      while (kills >= killsRequiredForLevel(level + 1)) {
+        level += 1;
+        bestPlayerLevel = Math.max(bestPlayerLevel, level);
+        writeSave("zombieSurvivalBestLevel", String(bestPlayerLevel));
+
+        const unlocked = getUnlocksForLevel(level);
+        const currentSkin = getCurrentSkin();
+        const currentVehicle = getCurrentVehicle();
+        player.maxHealth = currentSkin.hp + (currentVehicle ? currentVehicle.hpBonus : 0);
+        player.health = Math.min(player.maxHealth, player.health + 28);
+
+        showMessage(unlocked.length ? "Shop unlocked: " + unlocked.join(", ") : "Player Lv " + level);
+        renderGunsList();
+        renderSkinsList();
+        renderVehiclesList();
+        updateWalletText();
+      }
+    }
+
+    function killsRequiredForLevel(targetLevel) {
+      return Math.max(0, (targetLevel - 1) * 4);
+    }
+
+    function updateCamera() {
+      cameraX = clamp(player.x - width * 0.46, 0, Math.max(0, worldWidth - width));
+    }
+
+    function updateHud() {
+      const currentVehicle = getCurrentVehicle();
+      userText.textContent = username || "Player";
+      healthFill.style.width = clamp((player.health / player.maxHealth) * 100, 0, 100) + "%";
+      document.querySelector(".health").classList.toggle("danger", player.health < player.maxHealth * 0.35);
+      const currentLevelKills = killsRequiredForLevel(level);
+      const nextLevelKills = killsRequiredForLevel(level + 1);
+      xpFill.style.width = clamp(((kills - currentLevelKills) / (nextLevelKills - currentLevelKills)) * 100, 0, 100) + "%";
+      levelText.textContent = "Player Lv " + level;
+      scoreText.textContent = "Kills " + kills + " | Score " + score;
+      weaponText.textContent = weapons[selectedWeapon].name;
+      ammoText.textContent = reloadTimer > 0 ? "Reloading" : ammo[selectedWeapon] + " / " + weapons[selectedWeapon].mag;
+      skinText.textContent = getCurrentSkin().name + " Skin";
+      vehicleText.textContent = currentVehicle ? currentVehicle.name : "On Foot";
+      moneyText.textContent = "$" + money;
+      waveText.textContent = "Stage " + stage;
+      if (shield > 0) {
+        powerText.textContent = "Shield " + Math.ceil(shield) + "s";
+      } else if (timeFreeze > 0) {
+        powerText.textContent = "Time Frozen";
+      } else if (shieldUnlocked() && shieldCooldown > 0) {
+        powerText.textContent = "Shield " + Math.ceil(shieldCooldown) + "s";
+      } else if (timeFreezeCooldown > 0) {
+        powerText.textContent = "Freeze " + Math.ceil(timeFreezeCooldown) + "s";
+      } else {
+        powerText.textContent = shieldUnlocked() ? "Shield + Freeze Ready" : "Time Freeze Ready";
+      }
+    }
+
+    function damageZombie(zombie, amount) {
+      zombie.health -= amount;
+      if (zombie.health <= 0 && !zombie.dead) {
+        zombie.dead = true;
+        const reward = zombie.boss ? 220 : zombie.runner ? 45 : 70;
+        kills += 1;
+        score += reward;
+        createHitParticles(zombie.x + zombie.w / 2, zombie.y + zombie.h / 2, zombie.boss ? "#826b4d" : "#536b45", zombie.boss ? 18 : 9);
+      }
+    }
+
+    function explode(x, y, radius, damage) {
+      createHitParticles(x, y, "#676767", 22);
+      for (const zombie of zombies) {
+        const zx = zombie.x + zombie.w / 2;
+        const zy = zombie.y + zombie.h / 2;
+        const dist = Math.hypot(zx - x, zy - y);
+        if (dist < radius) {
+          damageZombie(zombie, damage * (1 - dist / radius) + 20);
+        }
+      }
+    }
+
+    function createBurningZone(x, y) {
+      const platform = nearestPlatform(x);
+      burningZones.push({
+        x,
+        y: Math.min(y, platform.y),
+        radius: 90,
+        life: 4.6,
+        damage: 31 + level * 2,
+        pulse: 0,
+      });
+      createHitParticles(x, Math.min(y, platform.y), "#ef6b35", 13);
+    }
+
+    function createHitParticles(x, y, color, count) {
+      for (let i = 0; i < count; i += 1) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = 80 + Math.random() * 260;
+        particles.push({
+          x,
+          y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed - 70,
+          life: 0.25 + Math.random() * 0.45,
+          color,
+          size: 2 + Math.random() * 4,
+        });
+      }
+    }
+
+    function resolvePlatforms(body) {
+      body.grounded = false;
+      if (body.y + body.h >= groundY && body.vy >= 0) {
+        body.y = groundY - body.h;
+        body.vy = 0;
+        body.grounded = true;
+        return;
+      }
+      for (const platform of platforms) {
+        if (platform.base) continue;
+        const previousBottom = body.y + body.h - body.vy * (1 / 60);
+        const currentBottom = body.y + body.h;
+        const withinX = body.x + body.w > platform.x && body.x < platform.x + platform.w;
+        if (withinX && previousBottom <= platform.y && currentBottom >= platform.y && body.vy >= 0) {
+          body.y = platform.y - body.h;
+          body.vy = 0;
+          body.grounded = true;
+        }
+      }
+    }
+
+    function onAnyPlatform(body) {
+      return platforms.some((platform) => {
+        const feet = body.y + body.h + 4;
+        return body.x + body.w > platform.x && body.x < platform.x + platform.w && feet >= platform.y && feet <= platform.y + 12;
+      });
+    }
+
+    function nearestPlatform(x) {
+      let best = platforms[0];
+      let bestDistance = Infinity;
+      for (const platform of platforms) {
+        const center = platform.x + platform.w / 2;
+        const distance = Math.abs(center - x);
+        if (distance < bestDistance) {
+          bestDistance = distance;
+          best = platform;
+        }
+      }
+      return best;
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, width, height);
+      drawSky();
+      ctx.save();
+      ctx.translate(-cameraX, 0);
+      drawCityBack();
+      drawPlatforms();
+      drawCheckpoints();
+      if (player) {
+        drawBurningZones();
+        drawBarriers();
+        drawBullets();
+        drawZombies();
+        drawPlayer();
+        drawParticles();
+      }
+      ctx.restore();
+      if (player) {
+        drawCrosshair();
+        drawMessage();
+        if (hitFlash > 0) drawDamageFlash();
+        if (timeFreeze > 0) drawFreezeOverlay();
+      }
+    }
+
+    function drawSky() {
+      const gradient = ctx.createLinearGradient(0, 0, 0, height);
+      gradient.addColorStop(0, "#101521");
+      gradient.addColorStop(0.58, "#1b2230");
+      gradient.addColorStop(1, "#24222a");
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, width, height);
+
+      ctx.fillStyle = "#f4d36a";
+      ctx.beginPath();
+      ctx.arc(width - 100, 82, 34, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    function drawCityBack() {
+      const start = Math.floor(cameraX / 260) * 260 - 520;
+      for (let x = start; x < cameraX + width + 520; x += 260) {
+        const buildingHeight = 180 + ((x * 17) % 160 + 160) % 160;
+        ctx.fillStyle = "#222735";
+        ctx.fillRect(x, height - buildingHeight, 210, buildingHeight);
+        ctx.fillStyle = "#343b4d";
+        for (let wx = x + 22; wx < x + 180; wx += 42) {
+          for (let wy = height - buildingHeight + 26; wy < height - 28; wy += 44) {
+            if ((wx + wy) % 3 !== 0) ctx.fillRect(wx, wy, 17, 18);
+          }
+        }
+      }
+    }
+
+    function drawPlatforms() {
+      for (const platform of platforms) {
+        if (platform.base) {
+          ctx.fillStyle = "#2d6a3f";
+          ctx.fillRect(platform.x, platform.y - 10, platform.w, 14);
+          ctx.fillStyle = "#7abf55";
+          ctx.fillRect(platform.x, platform.y - 4, platform.w, 8);
+          ctx.fillStyle = "#79513a";
+          ctx.fillRect(platform.x, platform.y, platform.w, platform.h);
+          ctx.fillStyle = "#5e3929";
+          for (let x = platform.x; x < platform.x + platform.w; x += 70) {
+            ctx.fillRect(x + 12, platform.y + 34, 36, 10);
+            ctx.fillRect(x + 32, platform.y + 82, 28, 8);
+          }
+          continue;
+        }
+
+        ctx.fillStyle = "#3a3d45";
+        ctx.fillRect(platform.x, platform.y, platform.w, platform.h);
+        ctx.fillStyle = "#535762";
+        ctx.fillRect(platform.x, platform.y, platform.w, 16);
+        ctx.fillStyle = "#252933";
+        for (let x = platform.x + 24; x < platform.x + platform.w - 20; x += 70) {
+          ctx.fillRect(x, platform.y - 28, 44, 28);
+          ctx.fillStyle = "#454a55";
+          ctx.fillRect(x + 6, platform.y - 22, 32, 6);
+          ctx.fillStyle = "#252933";
+        }
+      }
+    }
+
+    function drawCheckpoints() {
+      checkpoints.forEach((x, index) => {
+        const passed = index < nextCheckpointIndex;
+        const active = index === nextCheckpointIndex;
+        const poleHeight = 94;
+        const poleY = groundY - poleHeight;
+
+        ctx.fillStyle = passed ? "#9ea6b3" : active ? "#f2c84b" : "#6f7582";
+        ctx.fillRect(x, poleY, 8, poleHeight);
+        ctx.fillStyle = passed ? "#83b35f" : active ? "#df4f4f" : "#4b5260";
+        ctx.fillRect(x + 8, poleY + 10, 58, 30);
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "700 13px Arial";
+        ctx.textAlign = "center";
+        ctx.fillText("S" + (index + 2), x + 37, poleY + 30);
+      });
+    }
+
+    function drawPlayer() {
+      const cx = player.x + player.w / 2;
+      const skin = getCurrentSkin();
+      const hand = getWeaponBase();
+      const angle = aimAngle();
+      const shoulderX = cx;
+      const shoulderY = player.y + 28;
+
+      ctx.fillStyle = "rgba(0, 0, 0, 0.34)";
+      ctx.beginPath();
+      ctx.ellipse(cx, player.y + player.h + 4, 24, 7, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      drawEquippedVehicle(cx);
+
+      if (shield > 0) {
+        ctx.save();
+        ctx.globalAlpha = 0.28 + Math.sin(performance.now() / 90) * 0.08;
+        ctx.fillStyle = "#73b7ff";
+        ctx.beginPath();
+        ctx.ellipse(cx, player.y + 30, 38, 46, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = "#c8dcff";
+        ctx.lineWidth = 3;
+        ctx.stroke();
+        ctx.restore();
+      }
+
+      ctx.fillStyle = player.hurtCooldown > 0 ? "#f3f3f3" : skin.body;
+      ctx.fillRect(player.x + 6, player.y + 12, player.w - 12, player.h - 16);
+      ctx.fillStyle = skin.trim;
+      ctx.fillRect(player.x + 9, player.y + 16, player.w - 18, 5);
+      ctx.fillStyle = "#f0c09a";
+      ctx.fillRect(player.x + 8, player.y, player.w - 16, 18);
+      ctx.fillStyle = skin.pants;
+      ctx.fillRect(player.x + 4, player.y + 42, 10, 20);
+      ctx.fillRect(player.x + player.w - 14, player.y + 42, 10, 20);
+
+      ctx.strokeStyle = "#f0c09a";
+      ctx.lineWidth = 7;
+      ctx.lineCap = "round";
+      ctx.beginPath();
+      ctx.moveTo(shoulderX, shoulderY);
+      ctx.lineTo(hand.x + Math.cos(angle) * 16, hand.y + Math.sin(angle) * 16);
+      ctx.stroke();
+
+      drawHeldWeapon(hand.x, hand.y, angle);
+    }
+
+    function drawEquippedVehicle(cx) {
+      const vehicle = getCurrentVehicle();
+      if (!vehicle) return;
+
+      const y = player.y + player.h - 18;
+      const index = selectedVehicleIndex;
+      const drawWheel = (offsetX) => {
+        ctx.fillStyle = "#141820";
+        ctx.beginPath();
+        ctx.arc(cx + offsetX, y + 14, 10, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "#808995";
+        ctx.beginPath();
+        ctx.arc(cx + offsetX, y + 14, 4, 0, Math.PI * 2);
+        ctx.fill();
+      };
+
+      ctx.fillStyle = vehicle.color;
+      if (index === 0) {
+        ctx.fillRect(cx - 18, y - 10, 36, 10);
+        ctx.fillRect(cx - 6, y - 18, 12, 10);
+        ctx.fillRect(cx - 28, y - 4, 56, 6);
+        drawWheel(-22);
+        drawWheel(22);
+      } else if (index === 1) {
+        ctx.fillRect(cx - 26, y - 12, 52, 14);
+        ctx.fillRect(cx - 22, y - 20, 18, 8);
+        ctx.fillRect(cx + 4, y - 20, 18, 8);
+        ctx.fillRect(cx - 28, y - 4, 56, 8);
+        drawWheel(-24);
+        drawWheel(24);
+      } else if (index === 2) {
+        ctx.fillRect(cx - 28, y - 14, 56, 16);
+        ctx.fillRect(cx - 28, y - 24, 22, 10);
+        ctx.fillRect(cx + 4, y - 24, 22, 10);
+        ctx.fillRect(cx - 20, y - 4, 40, 8);
+        drawWheel(-26);
+        drawWheel(26);
+      } else if (index === 3) {
+        ctx.fillRect(cx - 28, y - 14, 56, 16);
+        ctx.fillRect(cx - 20, y - 26, 40, 10);
+        ctx.fillRect(cx - 28, y - 4, 56, 10);
+        drawWheel(-26);
+        drawWheel(26);
+      } else if (index === 4) {
+        ctx.fillRect(cx - 30, y - 16, 60, 18);
+        ctx.fillRect(cx - 4, y - 28, 16, 12);
+        ctx.fillRect(cx - 28, y - 6, 56, 10);
+        ctx.fillRect(cx - 36, y - 8, 4, 8);
+        drawWheel(-26);
+        drawWheel(26);
+      } else if (index === 5) {
+        ctx.fillRect(cx - 28, y - 18, 56, 14);
+        ctx.fillRect(cx - 8, y - 30, 16, 12);
+        ctx.fillStyle = "#1c2029";
+        ctx.fillRect(cx - 26, y - 34, 52, 4);
+        ctx.fillRect(cx - 34, y - 24, 8, 6);
+        ctx.fillRect(cx + 26, y - 24, 8, 6);
+        drawWheel(-22);
+        drawWheel(22);
+      } else {
+        ctx.fillRect(cx - 42, y - 12, 84, 24);
+        ctx.fillStyle = "#1c2029";
+        ctx.fillRect(cx - 18, y - 27, 34, 16);
+        ctx.fillStyle = "#c8dcff";
+        ctx.fillRect(cx - 13, y - 23, 24, 8);
+        drawWheel(-28);
+        drawWheel(28);
+      }
+    }
+
+    function drawHeldWeapon(x, y, angle) {
+      const weapon = weapons[selectedWeapon];
+      const flipped = angle > Math.PI / 2 || angle < -Math.PI / 2;
+
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.rotate(angle);
+      if (flipped) ctx.scale(1, -1);
+
+      ctx.fillStyle = "#151820";
+      ctx.fillRect(-7, 3, 13, 18);
+
+      if (weapon.type === "rocket") {
+        ctx.fillStyle = "#262a33";
+        ctx.fillRect(0, -11, 64, 22);
+        ctx.fillStyle = "#5b626e";
+        ctx.fillRect(8, -7, 42, 14);
+        ctx.fillStyle = "#b64b35";
+        ctx.fillRect(58, -8, 10, 16);
+      } else if (weapon.name === "Shotgun") {
+        ctx.fillStyle = "#65422e";
+        ctx.fillRect(-4, 2, 18, 8);
+        ctx.fillStyle = "#22262d";
+        ctx.fillRect(8, -8, 48, 6);
+        ctx.fillRect(8, 1, 48, 6);
+      } else if (weapon.name === "Rifle") {
+        ctx.fillStyle = "#343944";
+        ctx.fillRect(-8, -8, 54, 14);
+        ctx.fillStyle = "#8d969f";
+        ctx.fillRect(32, -5, 30, 8);
+        ctx.fillStyle = "#1b1f27";
+        ctx.fillRect(6, 5, 10, 14);
+      } else if (weapon.type === "flare") {
+        ctx.fillStyle = "#ef6b35";
+        ctx.fillRect(0, -8, 38, 16);
+        ctx.fillStyle = "#2b2020";
+        ctx.fillRect(8, 5, 10, 16);
+      } else if (weapon.type === "laser") {
+        ctx.fillStyle = "#2b3039";
+        ctx.fillRect(0, -8, 54, 16);
+        ctx.fillStyle = "#f05555";
+        ctx.fillRect(38, -5, 18, 10);
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(15, -3, 9, 6);
+      } else if (weapon.type === "barrier") {
+        ctx.fillStyle = "#73b7ff";
+        ctx.fillRect(0, -12, 28, 24);
+        ctx.strokeStyle = "#c8dcff";
+        ctx.lineWidth = 3;
+        ctx.strokeRect(0, -12, 28, 24);
+      } else {
+        ctx.fillStyle = "#22262d";
+        ctx.fillRect(0, -7, 34, 14);
+        ctx.fillStyle = "#8d969f";
+        ctx.fillRect(21, -4, 20, 8);
+        ctx.fillStyle = "#151820";
+        ctx.fillRect(7, 5, 9, 13);
+      }
+
+      ctx.restore();
+      ctx.lineCap = "butt";
+    }
+
+    function drawZombies() {
+      for (const zombie of zombies) {
+        const bodyColor = zombie.boss ? "#725642" : zombie.runner ? "#60794e" : "#4f6845";
+        ctx.fillStyle = zombie.burn > 0 ? "#9a4d34" : bodyColor;
+        ctx.fillRect(zombie.x, zombie.y + 18, zombie.w, zombie.h - 18);
+        ctx.fillStyle = zombie.boss ? "#8d735f" : "#78905f";
+        ctx.fillRect(zombie.x + 5, zombie.y, zombie.w - 10, 22);
+        ctx.fillStyle = "#1d201b";
+        ctx.fillRect(zombie.x + 8, zombie.y + 7, 5, 5);
+        ctx.fillRect(zombie.x + zombie.w - 13, zombie.y + 7, 5, 5);
+
+        const barWidth = zombie.w + 12;
+        const healthPercent = clamp(zombie.health / zombie.maxHealth, 0, 1);
+        ctx.fillStyle = "rgba(0,0,0,0.55)";
+        ctx.fillRect(zombie.x - 6, zombie.y - 12, barWidth, 5);
+        ctx.fillStyle = zombie.boss ? "#d14f45" : "#83b35f";
+        ctx.fillRect(zombie.x - 6, zombie.y - 12, barWidth * healthPercent, 5);
+      }
+    }
+
+    function drawBullets() {
+      for (const bullet of bullets) {
+        if (bullet.type === "laserBeam") {
+          ctx.strokeStyle = bullet.color;
+          ctx.lineWidth = 3;
+          ctx.beginPath();
+          ctx.moveTo(bullet.x, bullet.y);
+          ctx.lineTo(bullet.endX, bullet.endY);
+          ctx.stroke();
+          continue;
+        }
+
+        ctx.fillStyle = bullet.color;
+        if (bullet.type === "rocket") {
+          ctx.fillRect(bullet.x - 8, bullet.y - 4, 18, 8);
+          ctx.fillStyle = "#b64b35";
+          ctx.fillRect(bullet.x - 12, bullet.y - 3, 5, 6);
+        } else {
+          ctx.beginPath();
+          ctx.arc(bullet.x, bullet.y, bullet.size, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+    }
+
+    function drawBarriers() {
+      for (const barrier of barriers) {
+        const alpha = clamp(barrier.life / 7, 0.18, 0.78);
+        ctx.fillStyle = "rgba(92, 150, 222, " + alpha + ")";
+        ctx.fillRect(barrier.x, barrier.y, barrier.w, barrier.h);
+        ctx.strokeStyle = "#c8dcff";
+        ctx.lineWidth = 2;
+        ctx.strokeRect(barrier.x, barrier.y, barrier.w, barrier.h);
+      }
+    }
+
+    function drawBurningZones() {
+      for (const zone of burningZones) {
+        const radius = zone.radius + Math.sin(zone.pulse) * 8;
+        ctx.fillStyle = "rgba(198, 76, 37, 0.2)";
+        ctx.beginPath();
+        ctx.ellipse(zone.x, zone.y + 6, radius, 24, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "rgba(239, 107, 53, 0.45)";
+        for (let i = 0; i < 8; i += 1) {
+          const fx = zone.x - radius + (radius * 2 * i) / 7;
+          const flame = 18 + ((i * 17 + zone.pulse * 9) % 20);
+          ctx.fillRect(fx, zone.y - flame, 10, flame);
+        }
+      }
+    }
+
+    function drawParticles() {
+      for (const particle of particles) {
+        ctx.globalAlpha = clamp(particle.life * 2, 0, 1);
+        ctx.fillStyle = particle.color;
+        ctx.fillRect(particle.x, particle.y, particle.size, particle.size);
+        ctx.globalAlpha = 1;
+      }
+    }
+
+    function drawCrosshair() {
+      ctx.strokeStyle = "#f3f3f3";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(mouse.x - 10, mouse.y);
+      ctx.lineTo(mouse.x - 4, mouse.y);
+      ctx.moveTo(mouse.x + 4, mouse.y);
+      ctx.lineTo(mouse.x + 10, mouse.y);
+      ctx.moveTo(mouse.x, mouse.y - 10);
+      ctx.lineTo(mouse.x, mouse.y - 4);
+      ctx.moveTo(mouse.x, mouse.y + 4);
+      ctx.lineTo(mouse.x, mouse.y + 10);
+      ctx.stroke();
+    }
+
+    function drawMessage() {
+      if (messageTimer <= 0 || !message) return;
+      ctx.save();
+      ctx.globalAlpha = clamp(messageTimer, 0, 1);
+      ctx.fillStyle = "rgba(0, 0, 0, 0.48)";
+      ctx.fillRect(width / 2 - 170, 82, 340, 42);
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "700 20px Arial";
+      ctx.textAlign = "center";
+      ctx.fillText(message, width / 2, 109);
+      ctx.restore();
+    }
+
+    function drawDamageFlash() {
+      ctx.fillStyle = "rgba(210, 40, 40, " + Math.min(hitFlash * 1.8, 0.28) + ")";
+      ctx.fillRect(0, 0, width, height);
+    }
+
+    function drawFreezeOverlay() {
+      ctx.fillStyle = "rgba(120, 170, 230, 0.11)";
+      ctx.fillRect(0, 0, width, height);
+    }
+
+    function rectsOverlap(a, b) {
+      return a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
+    }
+
+    function circleRectOverlap(cx, cy, radius, rect) {
+      const x = clamp(cx, rect.x, rect.x + rect.w);
+      const y = clamp(cy, rect.y, rect.y + rect.h);
+      return Math.hypot(cx - x, cy - y) <= radius;
+    }
+
+    function distancePointToSegment(px, py, x1, y1, x2, y2) {
+      const dx = x2 - x1;
+      const dy = y2 - y1;
+      const length = dx * dx + dy * dy;
+      const t = length === 0 ? 0 : clamp(((px - x1) * dx + (py - y1) * dy) / length, 0, 1);
+      const x = x1 + t * dx;
+      const y = y1 + t * dy;
+      return Math.hypot(px - x, py - y);
+    }
+
+    function clamp(value, min, max) {
+      return Math.max(min, Math.min(max, value));
+    }
+
+    function endGame() {
+      gameState = "gameOver";
+      finalStats.textContent = "You reached Player Lv " + level + ", Stage " + stage + ", with " + kills + " zombie kills and a score of " + score + ".";
+      gameOver.classList.remove("hidden");
+    }
+
+    function loop(time) {
+      const dt = Math.min(0.033, (time - lastTime) / 1000 || 0);
+      lastTime = time;
+      update(dt);
+      draw();
+      requestAnimationFrame(loop);
+    }
+
+    window.addEventListener("resize", resize);
+
+    window.addEventListener("keydown", (event) => {
+      keys.add(event.code);
+
+      if (event.code === "Enter" && gameState === "shopBreak" && !homeScreen.classList.contains("hidden")) continueFromCheckpoint();
+      else if (event.code === "Enter" && gameState !== "playing" && !homeScreen.classList.contains("hidden")) initGame();
+      if (event.code === "KeyR" && gameState === "playing") reload();
+      if (event.code === "KeyQ" && gameState === "playing") cycleWeapon(-1);
+      if (event.code === "KeyE" && gameState === "playing") cycleWeapon(1);
+      if (event.code === "KeyZ" && gameState === "playing") cycleVehicle(-1);
+      if (event.code === "KeyC" && gameState === "playing") cycleVehicle(1);
+      if (event.code === "KeyF" && gameState === "playing") activateShield();
+      if (event.code === "Space" && gameState === "playing") {
+        event.preventDefault();
+        if (timeFreezeCooldown <= 0) {
+          timeFreeze = level >= 6 ? 4.5 : 3;
+          timeFreezeCooldown = 11;
+          showMessage("Time Freeze");
+        }
+      }
+
+      const weaponKeyMap = {
+        Digit1: 0,
+        Digit2: 1,
+        Digit3: 2,
+        Digit4: 3,
+        Digit5: 4,
+        Digit6: 5,
+        Digit7: 6,
+        Digit8: 7,
+        Digit9: 8,
+        Digit0: 9,
+        Minus: 10,
+        Numpad1: 0,
+        Numpad2: 1,
+        Numpad3: 2,
+        Numpad4: 3,
+        Numpad5: 4,
+        Numpad6: 5,
+        Numpad7: 6,
+        Numpad8: 7,
+        Numpad9: 8,
+        Numpad0: 9,
+        NumpadSubtract: 10,
+      };
+
+      const weaponIndex = weaponKeyMap[event.code];
+      if (gameState === "playing" && weaponIndex !== undefined) selectWeapon(weaponIndex);
+    });
+
+    window.addEventListener("keyup", (event) => {
+      keys.delete(event.code);
+    });
+
+    const updateTouchAim = (touch) => {
+      const rect = canvas.getBoundingClientRect();
+      mouse.x = touch.clientX - rect.left;
+      mouse.y = touch.clientY - rect.top;
+      if (player) {
+        player.facing = worldMouse().x >= player.x + player.w / 2 ? 1 : -1;
+      }
+    };
+
+    canvas.addEventListener("mousemove", (event) => {
+      const rect = canvas.getBoundingClientRect();
+      mouse.x = event.clientX - rect.left;
+      mouse.y = event.clientY - rect.top;
+      if (player) {
+        player.facing = worldMouse().x >= player.x + player.w / 2 ? 1 : -1;
+      }
+    });
+
+    canvas.addEventListener("touchstart", (event) => {
+      if (platformMode !== "phone") return;
+      event.preventDefault();
+      const touch = event.touches[0];
+      updateTouchAim(touch);
+      mouse.down = true;
+      touchState.shoot = true;
+    }, { passive: false });
+
+    canvas.addEventListener("touchmove", (event) => {
+      if (platformMode !== "phone") return;
+      event.preventDefault();
+      const touch = event.touches[0];
+      updateTouchAim(touch);
+    }, { passive: false });
+
+    const clearTouchControls = () => {
+      touchState.left = false;
+      touchState.right = false;
+      touchState.jump = false;
+      touchState.shoot = false;
+      mouse.down = false;
+    };
+
+    window.addEventListener("touchend", (event) => {
+      if (platformMode !== "phone") return;
+      event.preventDefault();
+      if (event.touches.length === 0) {
+        clearTouchControls();
+      }
+    }, { passive: false });
+
+    window.addEventListener("touchcancel", (event) => {
+      if (platformMode !== "phone") return;
+      event.preventDefault();
+      clearTouchControls();
+    }, { passive: false });
+
+    canvas.addEventListener("mousedown", (event) => {
+      if (event.button === 0) mouse.down = true;
+    });
+
+    window.addEventListener("mouseup", () => {
+      mouse.down = false;
+    });
+
+    canvas.addEventListener("contextmenu", (event) => {
+      event.preventDefault();
+    });
+
+    const wireTouchButton = (button, downKey) => {
+      button.addEventListener("touchstart", (event) => {
+        event.preventDefault();
+        touchState[downKey] = true;
+      }, { passive: false });
+      button.addEventListener("touchend", (event) => {
+        event.preventDefault();
+        touchState[downKey] = false;
+      }, { passive: false });
+    };
+
+    wireTouchButton(leftControl, "left");
+    wireTouchButton(rightControl, "right");
+    wireTouchButton(jumpControl, "jump");
+    wireTouchButton(shootControl, "shoot");
+
+    weaponControl.addEventListener("click", () => cycleWeapon(1));
+    reloadControl.addEventListener("click", (event) => {
+      event.preventDefault();
+      if (gameState === "playing") reload();
+    });
+    vehicleControl.addEventListener("click", () => cycleVehicle(1));
+    shieldControl.addEventListener("click", (event) => {
+      event.preventDefault();
+      if (gameState === "playing") activateShield();
+    });
+
+    startButton.addEventListener("click", () => {
+      initGame();
+    });
+    resumeButton.addEventListener("click", () => {
+      continueFromCheckpoint();
+    });
+    loginButton.addEventListener("click", loginPlayer);
+    usernameInput.addEventListener("keydown", (event) => {
+      if (event.code === "Enter") loginPlayer();
+    });
+    gunsButton.addEventListener("click", () => showHomePanel("guns"));
+    skinsButton.addEventListener("click", () => showHomePanel("skins"));
+    vehiclesButton.addEventListener("click", () => showHomePanel("vehicles"));
+    gunsBackButton.addEventListener("click", () => showHomePanel("home"));
+    skinsBackButton.addEventListener("click", () => showHomePanel("home"));
+    vehiclesBackButton.addEventListener("click", () => showHomePanel("home"));
+    continueButton.addEventListener("click", continueFromCheckpoint);
+    checkpointShopButton.addEventListener("click", openShopFromCheckpoint);
+    gameOverHomeButton.addEventListener("click", returnToHome);
+    restartButton.addEventListener("click", initGame);
+
+    resize();
+    usernameInput.value = username;
+    const isMobilePhone = isPhoneDevice();
+    if (isMobilePhone) {
+      showHomePanel("splash");
+      requestAnimationFrame(loop);
+    } else {
+      showPhoneOnlyMessage();
+    }
+
+    if (splashStartButton) {
+      splashStartButton.addEventListener("click", () => {
+        if (username) {
+          showHomePanel("home");
+        } else {
+          showHomePanel("login");
+        }
+      });
+    }
+
+    if (mobileOnlyReload) {
+      mobileOnlyReload.addEventListener("click", () => {
+        if (isPhoneDevice()) {
+          hidePhoneOnlyMessage();
+          resize();
+          showHomePanel(username ? "home" : "login");
+          requestAnimationFrame(loop);
+        } else if (mobileNotice) {
+          mobileNotice.querySelector("p").textContent = "Still not on a phone. Open this page on a mobile device to play.";
+        }
+      });
+    }
+  </script>
+
+
+</body>
+
+</html>
