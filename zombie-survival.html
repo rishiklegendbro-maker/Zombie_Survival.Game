@@ -2808,11 +2808,10 @@
     if (splashStartButton) {
       splashStartButton.addEventListener("click", () => {
         if (mobileNotice) mobileNotice.classList.add("hidden");
-        if (username) {
-          showHomePanel("home");
-        } else {
-          showHomePanel("login");
-        }
+        // Direct-start fallback: hide mobile overlay and start immediately
+        username = username || "Player";
+        showHomePanel("home");
+        try { initGame(); requestAnimationFrame(loop); } catch (e) { /* ignore if not ready */ }
       });
     }
 
